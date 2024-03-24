@@ -9,5 +9,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 'node'
+      - name: definir variables
+        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Run info file
         run: node info.js

@@ -4,8 +4,10 @@ on: [push]
 jobs: 
   job-hola-mundo:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+      - name: Copiar archivos
       - uses: actions/checkout@v4
+      - name: Instalar Node
       - uses: actions/setup-node@v4
         with:
           node-version: 'node'

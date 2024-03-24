@@ -1,4 +1,5 @@
 name: wf-hola-mundo
+run-name: run-wf-hola-mundo
 on: [push] 
 jobs: 
   job-hola-mundo:

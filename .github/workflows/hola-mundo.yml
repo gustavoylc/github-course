@@ -5,7 +5,6 @@ jobs:
   job-hola-mundo:
     runs-on: ubuntu-latest
     steps: 
-      - name: Copiar archivos
       - uses: actions/checkout@v4
       - name: Instalar Node
       - uses: actions/setup-node@v4
